@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --border-radius: 50px;
+    --gap: 15px;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+
+.container .image{
+    height: 750px;
+    position: relative;
+    width: 5%;
+    
+    transition: .3s linear;
+}
+
+.container .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.container .image span{
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    color: white;
+    left: 20px;
+    display: none;
+}
+
+.container .image.active{
+    
+    width: 65%;
+}
+
+.container .image.active span{
+    display: block;
+}
