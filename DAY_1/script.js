@@ -1,21 +1,15 @@
-const images = document.getElementsByClassName("image");
-// const container = document.querySelector(".container");
-console.log(images);
+const images = document.querySelectorAll(".image");
 
-images[0].classList.add('active');
-
-for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", function(){
-
-        // remove 'active' class from all images
-
-        for(const image of images){
-            image.classList.remove('active');
-        }
-        // add 'active' class to the clicked image
-
-        this.classList.add('active');
+images.forEach((image) => {
+    image.addEventListener('click', () =>{
+        removeActiveClasses();
+        image.classList.add('active');
     })
     
-}
+});
 
+function removeActiveClasses() {
+    images.forEach(image => {
+        image.classList.remove('active');
+    })
+}
