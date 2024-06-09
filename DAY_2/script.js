@@ -1,50 +1,47 @@
-const progressLine = document.getElementById('progress-line');
+const progress = document.getElementById('progress');
 const prev = document.getElementById('prev');
-
 const next = document.getElementById('next');
-
-const numbers = document.querySelectorAll('.number');
-
-let currenActive = 1;
+const circles = document.querySelectorAll('.circle');
+let currentActive = 1;
 
 next.addEventListener('click', () => {
-    currenActive++
-    if(currenActive > numbers.length){
-        currenActive = numbers.length;
+    currentActive++
+    if(currentActive > circles.length){
+        currentActive = circles.length
     }
-    console.log(currenActive)
+    console.log(currentActive)
     update()
 })
 
 prev.addEventListener('click', () => {
-    currenActive--
+    currentActive--
 
-    if(currenActive < 1){
-        currenActive = 1
+    if(currentActive < 1){
+        currentActive = 1
     }
     update()
 })
 
 
 function update() {
-    numbers.forEach((number, idx) =>{
-        if(idx < currenActive) {
-            number.classList.add('active');
+    circles.forEach((circle, idx) =>{
+        if(idx < currentActive) {
+            circle.classList.add('active')
         } else {
-            number.classList.remove('active')
+            circle.classList.remove('active')
         }
     })
 
     const actives = document.querySelectorAll('.active');
-    progressLine.style.width = (actives.length  - 1) / (numbers.length - 1) * 100 + '%';
+    progress.style.width = (actives.length  - 1) / (circles.length - 1) * 100 + '%';
 
-    if(currenActive === 1) {
+    if(currentActive === 1) {
         prev.disabled = true;
     }
-    else if(currenActive === numbers.length){
+    else if(currentActive === circles.length){
         next.disabled = true;
     } else{
         prev.disabled = false;
         next.disabled = false;
     }
-}
+} 
