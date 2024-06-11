@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+:root{
+    --border-radius: 50px;
+    --gap: 15px;
+    --circle-padding: 50px;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    overflow-x: hidden;
+    background-color: #333;
+
+}
+
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    transform-origin: top left;
+    background-color: #fafafa;
+    padding: 50px;
+    transition: transform .5s ease-in;
+    
+}
+
+.container.show-nav{
+    transform: rotate(-15deg);
+
+}
+
+.circle-container{
+    position: fixed;
+    left: -75px;
+    top: -75px;
+} 
+
+.circle{
+    padding: var(--circle-padding);
+    background-color: #ff7b00;
+    border-radius: 50%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: transform .5s ease-in;
+}
+
+.container.show-nav .circle{
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+.circle button{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    color: black;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#close{
+    left: 10%;
+    bottom: 30%;
+}
+
+#open{
+    right: 10%;
+    bottom: 20%;
+}
+ 
+.content{
+    max-width: 1000px;
+    margin: auto;
+} 
+
+.content p{
+    padding: 20px 0;
+    max-width: 750px;
+}
+
+.content img{
+    max-height: 500px;
+} 
+
+.container.show-nav + nav ul li{
+    transition-delay: .3s;
+    transform: translateY(-400px);
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+
+}
+
+nav ul li{
+text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    /* transform: translateY(-400px); */
+    transition: transform .4s ease-in;
+    
+}
+
+nav ul li i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li:first-child{
+    /* transform: translateX(-50px); */
+
+}
+nav ul li:nth-child(2){
+    
+    margin-left: 15px;
+    /* transform: translateX(-50px); */
+
+}
+
+nav ul li:last-child{
+    margin-left: 30px;
+    /* transform: translateX(-100%); */
+
+}

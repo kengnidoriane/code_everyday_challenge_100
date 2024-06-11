@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'>
+<title>Account Suspended</title>
+<style type="text/css">
+body { 
+	font-family: 'Droid Sans', arial, serif;
+	margin:0;
+	padding:0;
+	background-color:;
+	background:URL(http://templates.doteasy.com/Images/cpanelsuspendedpage/bg.png) repeat-x #97ccfb;
+	font-size:12px;
+}
+
+a {
+	color:#2e9221;
+}
+* {
+	margin:0;
+	padding:0;
+}
+h1 {
+	background:url(http://templates.doteasy.com/Images/cpanelsuspendedpage/header_01.png) no-repeat;
+	width:410px;
+	height:90px;
+	line-height:85px;
+	padding:0 0 0 25px;
+	font-size:30px;
+	color:#ffffff;
+	font-family: 'Droid Sans bold', arial, serif;
+}
+#wrap {
+	margin:0  auto;
+	width:986px;
+}
+.msg {
+	background:url(http://templates.doteasy.com/Images/cpanelsuspendedpage/contentbox.png) no-repeat;
+	height:374px;
+	color:#000;
+	font-size:36px;
+	padding:75px 0 0 145px;
+}
+* html .msg {
+	height:374px;
+}
+</style>
+</head>
+<body>
+<h1>Account Suspended</h1>
+<div id="wrap">
+  <div class="msg">
+    This Account Has Been Suspended. <br/>Please <a href="https://www.doteasy.com/contactus/">contact us</a> as soon as possible.
+
+  </div>
+</div>
+</body>
+</html>
