@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: none; */
+    border: none;
 }
 
 body{
-    background-color: #f1e4e4;
+    background-color: #e7e7e0;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -20,13 +20,13 @@ h1{
 }
 
 .box{
-    background-color: rgb(146, 187, 221);
+    background-color: steelblue;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 400px;
-    height:220px;
+    height:200px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0 ,0 ,0 ,.3);
