@@ -1,21 +1,24 @@
-// variables declaration
+const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
 
-const buttons = document.querySelectorAll('.btn');
-const audios = ['audios/Applaudissements.wav', 'audios/son.wav', 'audios/sonn.wav', 'audios/sonne.wav', 'audios/sonner.wav', 'audios/sonnera.wav'];
+sounds.forEach(sound => {
+    const btn = document.createElement('button');
+    btn.classList.add('btn');
 
+    btn.innerText = sound;
 
-let audioInProgress = null
-
-buttons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
+        stopSongs()
+        document.getElementById(sound).play()
+    })
+    document.getElementById('buttons').appendChild(btn)
+})
 
-        //Stop the sound currently playing if there is one
-        if (audioInProgress) {
-            audioInProgress.pause();
-            audioInProgress.currentTime = 0; //Reset to starting position
-        }
-        audioInProgress = new Audio(audios[index]);
+function stopSongs() {
+    sounds.forEach(sound => {
+        const song = document.getElementById(sound);
 
-        audioInProgress.play();
-    });
-});
+        song.pause();
+
+        song.currentTime = 0;
+    })
+}

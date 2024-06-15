@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 
 :root{
-    --btn-background-color:#330e5e;
+    --btn-background-color: rebeccapurple;
     --btn-color:#d1c9da;
-    --background-body: #854bc9;
+    --background-body: rgb(161, 100, 223);
 }
 
 *{
@@ -15,24 +15,30 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: var(--background-body);
-
-}
-
-.container{
-    display: flex;
-    gap: 3rem;
+    overflow: hidden;
 }
 
 .btn{
-    padding: 1rem 1.5rem;
     background-color: var(--btn-background-color);
+    border-radius: 5px;
     color: var(--btn-color);
+    margin: 1rem;
+    padding: 1.5rem 3rem;
     font-size: 1.2rem;
-    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover{
+    opacity: .9;
+}
+
+.btn:focus{
+    outline: none;
 }
