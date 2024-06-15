@@ -2,11 +2,11 @@
 
 
 :root{
-    --background-body: #4593ec;
+    --background-body: #686de0;
     --title-color: #817676;
     --joke-color: black;
-    --btn-background: #8114dace;
-    --btn-color: #e4d0f0;
+    --btn-background: #9f68e0;
+    --btn-color: #ffffff;
     --container-background:#fff;
     --border-radius: 10px;
 }
@@ -26,35 +26,47 @@ body{
     height: 100vh;
     background-color: var(--background-body);
     overflow: hidden;
+    padding: 20px;
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--container-background);
-    gap: 2rem;
-    padding: 1.5rem 2rem;
+    padding: 50px 20px;
     border-radius: var(--border-radius);
-}
-
-.title h3{
-    color: var(--title-color);
-    font-size: .9rem;
-}
-
-.joke-container p{
-    max-width: 550px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-weight: 700;
-    font-size: 1.2rem;
+    max-width: 100%;
+    width: 800px;
 }
 
-.button .btn{
+h3{
+    opacity: .5;
+    letter-spacing: 2px;
+    color: var(--title-color);
+}
+
+.joke{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.btn{
     cursor: pointer;
     background-color: var(--btn-background);
     color: var(--btn-color);
-    padding: .5rem 1rem;
+    padding: 14px 40px;
     border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.btn:active{
+    transform: scale(.98);
+}
+
+.btn:focus{
+    outline: 0;
 }
