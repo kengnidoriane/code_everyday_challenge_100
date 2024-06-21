@@ -10,9 +10,8 @@
 
 :root{
     --border-radius:10px;
-    --background-body: #1d8af0;
-    --background-button: #f09711;
-    /* --box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); */
+    --background-body: #2b88f0;
+    --background-button: #f0932b;
 }
 
 body{
@@ -24,41 +23,35 @@ body{
     justify-content: center;
 }
 
-.container h2{
-    font-size: 18px;
+h3{
     color: #fff;
-    margin-bottom: 16px;
+    margin: 10px 0 20px;
     text-align: center;
 }
 
 .container{
-    max-width: 450px;
+    width: 500px;
 }
 
-.container textarea{
-    width: 450px;
+textarea{
+    width: 100%;
     height: 100px;
-    resize: none;
+    font-family: inherit;
     padding: 10px;
-    color: #494343bd;
-    outline-color: #1d8af0;
-    margin-bottom: 16px;
-}
-
-.container textarea:focus{
+    margin: 0 0 20px;
     outline: none;
-    border: 1px solid var(--background-body);
 }
 
-.container .buttons{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.container .buttons button{
-    padding: 10px;
+.tag{
+    padding: 10px 20px;
     background-color: var(--background-button);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 50px;
+    margin: 0 5px 10px 0;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.highlight{
+    background-color: #273c75;
 }
