@@ -1,0 +1,46 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.empty{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background: white;
+}
+
+.fill{
+    background-image: url('images/day21.jpg');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.hold{
+    border: solid 5px #ccc;
+}
+
+.hovered{
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+@media (max-widt:800px) {
+    body{
+        flex-direction: column;
+    }
+}
