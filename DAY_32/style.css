@@ -1,5 +1,5 @@
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
  
 
-body{
+body {
     font-family: 'Muli',sans-serif;
     height: 100vh;
     background-color: var(--background-body);
@@ -19,18 +19,18 @@ body{
     overflow: hidden;
 }
 
-.toggle-container{
+.toggle-container {
     display: flex;
     align-items: center;
     margin: 10px 0;
     width: 200px;
 }
 
-.toggle{
+.toggle {
     visibility: hidden;
 }
 
-.label{
+.label {
     position: relative;
     background-color: #d0d0d0;
     border-radius: 50px;
@@ -41,7 +41,7 @@ body{
     height: 40px;
 }
 
-.toggle:checked + .label{
+.toggle:checked + .label {
     background-color: #8e44ad;
 }
 
