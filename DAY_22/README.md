@@ -1,6 +1,6 @@
-# 🚀 Code Everyday Challenge  - DAY 18 : Drawing App
+# 🚀 Code Everyday Challenge  - DAY 22 : Drawing App
 
-![Challenge Image](day18.png)
+![Challenge Image](day22.png)
 
 ## Descrption
 
