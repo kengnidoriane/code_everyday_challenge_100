@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.background {
+    background: url('https://img.freepik.com/photos-gratuite/espace-travail-bureau-ecran-ordinateur-lampe_23-2148821900.jpg?t=st=1725031277~exp=1725034877~hmac=06c8ada2ff53b580e31001ec94256edf7b212e0f75b9c40270a3ac97b0f0bbdb&w=996') no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
