@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #bfd1f7;
+}
+
+.container {
+    position: relative; 
+    text-align: center;
+}
+
+.value-display {
+    border: 1px solid #acaaaa;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #333;
+    position: absolute; /* Position absolue pour suivre le curseur */
+    top: -40px;
+    transform: translateX(-50%); /* Centrer horizontalement */
+    left: 50%; /* Positionner au centre horizontalement */
+}
+
+input[type="range"] {
+    -webkit-appearance: none;/* Supprime le style par défaut */
+    width: 300px;
+    height: 8px; /*Hauteur de la piste */
+    background: #854381; /* Couleur de la piste */
+    border-radius: 5px; /* Arrondir les bords de la piste */
+    outline: none; /* Supprime le contour lors de la sélection */
+}
